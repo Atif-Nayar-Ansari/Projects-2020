@@ -13,8 +13,8 @@ spring:  mvc:    view:      prefix: /views/
          #username: scott
          #password: tiger
          #driver-class-name: oracle.jdbc.driver.OracleDriver
-  jpa:    show-sql: true
-    hibernate:      ddl-auto: update
+  #jpa:    #show-sql: true
+    #hibernate:      #ddl-auto: update
     #properties:
            #hibernate: org.hibernate.dialect.MySQL55Dialect
            #hibernate: org.hibernate.dialect.Oracle10gDilect
