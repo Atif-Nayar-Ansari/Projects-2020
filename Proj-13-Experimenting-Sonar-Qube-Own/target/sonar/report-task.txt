@@ -1,0 +1,5 @@
+projectKey=sonarqube:Proj-13-Experimenting-Sonar-Qube-Own
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/sonarqube:Proj-13-Experimenting-Sonar-Qube-Own
+ceTaskId=AXBZyhK0KjUxvMp_MOIN
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXBZyhK0KjUxvMp_MOIN

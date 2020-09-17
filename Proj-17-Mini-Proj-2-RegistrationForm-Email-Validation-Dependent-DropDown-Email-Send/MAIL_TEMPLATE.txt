@@ -1,0 +1,7 @@
+Hi there...<br/>
+Mr/Ms <h2>{FNAME} {LNAME},</h2>
+<br/>
+Welcome to Registration process, Your registration is almost completed.<br/>
+But for now all you have to do is to click the link below to complete your registration.<br/><br/>
+Temporary Password-{PASS}<br/>
+<a href="http://localhost:9090/unlockAccountUsingEmail?email={EMAIL}">Click here to Unlock Your account</a>

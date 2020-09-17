@@ -1,0 +1,31 @@
+server:
+  port: 9090
+
+spring:  mvc:    view:      prefix: /views/
+      suffix: .jsp
+#-------------------------to insert into the Embeded H2 data base-----------------------      
+  datasource:
+    username: sa    password:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver  
+
+#----------------------------to insert into the Oracle data base just enable these properties---------------------------------    
+  #datasource:
+         #url: jdbc:oracle:thin:@localhost:1521:xe 
+         #username: scott
+         #password: tiger
+         #driver-class-name: oracle.jdbc.driver.OracleDriver
+  #jpa:    #show-sql: true
+    #hibernate:      #ddl-auto: update
+    #properties:
+           #hibernate: org.hibernate.dialect.Oracle10gDilect
+
+#----------------------------to use the default logBack given in boot enable these properties---------------------------------
+
+     
+     
+
+
+                 
+                 
+                 
