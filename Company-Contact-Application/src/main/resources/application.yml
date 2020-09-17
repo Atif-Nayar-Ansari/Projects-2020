@@ -15,7 +15,7 @@ spring:  mvc:    view:      prefix: /views/
          #driver-class-name: oracle.jdbc.driver.OracleDriver
   jpa:    show-sql: true
     hibernate:      ddl-auto: update
-    properties:
-           hibernate: org.hibernate.dialect.MySQL55Dialect
+    #properties:
+           #hibernate: org.hibernate.dialect.MySQL55Dialect
            #hibernate: org.hibernate.dialect.Oracle10gDilect
 
