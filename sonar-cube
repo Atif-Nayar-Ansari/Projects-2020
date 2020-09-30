@@ -1,0 +1,52 @@
+Installing Sonar Software in Local
+--------------------------------------
+-> Download Sonar Software from below url
+	
+	URL : https://www.sonarqube.org/downloads/
+	Version : 6.3.1
+
+-> Start Sonar Server by executing StartSonar.bat	
+
+	Location :Sonar-Folder/bin/windows64/StartSonar.bat
+
+-> Once Sonar Server is started it will display Sonar up and running message in console.
+
+-> By Default Sonar Server will run on 9000 port number
+
+-> Open Sonar Server Dashboard using below URL
+	
+	http://localhost:9000/
+
+
+Running Project with SonarQube Server
+-------------------------------------
+Add below 2 plugins in project pom.xml file
+
+<plugin>
+   <groupId>org.sonarsource.scanner.maven</groupId>
+   <artifactId>sonar-maven-plugin</artifactId>
+   <version>3.4.0.905</version>
+</plugin>
+<plugin>
+   <groupId>org.jacoco</groupId>
+   <artifactId>jacoco-maven-plugin</artifactId>
+   <version>0.8.1</version>
+</plugin>
+
+-> Do Maven build of project with install goal
+
+-> For project do maven build with below goal
+	
+open project home and in cmd type this->mvn sonar:sonar
+
+-> After maven build completed, check sonar server dashboard.
+	
+-> We can our project report under Projects
+
+-> Report contains below details
+	
+		1) Bugs
+		2) Vunerabilities
+		3) Code Smells
+		4) Code Coverage
+		5) Duplicates etc...
