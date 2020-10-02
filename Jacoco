@@ -1,0 +1,40 @@
+
+
+
+
+plugin-Add this in pom
+
+1.after unit test is complete just Run->Run As Maven test-> go to target folder and
+
+		<!--Jacoco-->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<!--this is where jacocoo report will be generated -->
+							<outputDirectory>target/jacoco-report</outputDirectory>
+							<!--For excluding the package from the -->
+							<excludes>
+								<exclude>**/*com/nt/model/**</exclude><!--For excluding packages -->
+								<exclude>**/*com/nt/dao/ContactDAOImpl.class</exclude><!--For excluding 
+									classes -->
+							</excludes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			
